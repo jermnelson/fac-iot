@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colorado College Fine Arts Collection - Internet of Things</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <style>
+     body {
+       {#font-family: Hack, system #}
+      }
+    </style>  
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="container">
+    <section class="jumbotron">
+     <div class="row">
+      <section class="col-md-4">
+       <h1><small>Colorado College</small><br>
+       FAC - IOT</h1>
+      <h2>(Fine Arts Collection - Internet of Things)</h2>
+     </section>
+      <section class="col-md-8">
+      <img src="{{ url_for("static", filename="tutt-art-reading-room-books.png") }}"
+         class="img img-thumbnail">
+      </section>
+      </div>
+    </section>
+    <br>
+    <section class="jumbotron">
+      <h1>The elevator pitch 
+          <i class="glyphicon glyphicon-hand-right"></i>
+       <img src="{{ url_for('static', filename='down-elevator.svg') }}"
+            style="width: 80px">
+      </h1>
+    </section> 
+    <hr>
+    <section class="jumbotron">
+      <h2>Colorado College Library Renovation</h2>
+      <p class="lead">Have heard of this project? Pfeiffer Partners 
+      is the lead architect, here are their 
+      <a href="https://www.coloradocollege.edu/dotAsset/c7d0b5c0-1264-44b4-9d62-9683f0f1695d.pdf">latest public design 
+      schemes</a> for the outside &amp; third floor:</p>
+      <img src="https://www.coloradocollege.edu/other/strategicplan/progress/img/library-rendering.jpg"
+       style="height: 450px"
+       class="img img-thumbnail">
+       <hr>
+      <img src="{{ url_for('static', filename='center-tutt-library-3rd-floor-study-areas.png') }}"
+          style="height: 600px" class="u-pull-right"
+          class="img img-thumbnail">
+       <hr>
+      <img src="{{ url_for('static', filename='center-tutt-library-3rd-floor-cafe-study.png') }}" class="img img-thumbnail">
+      <h2 style="text-align: center">Where are the 3rd Floor books?</h2>
+      <h1 style="text-align: center"><img src="{{ url_for('static', filename='down-elevator.svg') }}" 
+            style="width: 80px"> <i class="glyphicon glyphicon-hand-left"></i></h1>
+ 
+    </section>
+    <hr>
+    <div class="row">
+     <div class="col-md-4">
+      <section class="jumbotron">
+        <h1>Not to worry!</h1>   
+        <p class="lead">One of Colorado College's best book
+        collections (and the least likely to be digitalized) is 
+        located on this floor.</p>
+      </section>
+      </div>
+     <section class="col-md-8">
+      <img class="img img-thumbnail" 
+            src="{{ url_for("static", filename="center-tutt-library-3rd-floor-fine-art-books.svg") }}"
+           style="width: 80%">
+     </section>
+    </div>
+    <h1 style="text-align: center">Tutt Library's Current Art Reading Room</h1>
+     
+    <div class="row">
+      <section class="col-md-6">
+        <img class="img img-thumbnail" src="{{ url_for("static", filename="tutt-art-reading-room.png") }}">
+        <p class="lead">Some our Library's most interesting, colorful, largest, and expensive books   
+         are currently located in the Art Reading Room on the 2nd Floor of Tutt South. There new
+         home is on the 3rd Floor.
+        </p>  
+      </section> 
+      <section class="col-md-6">
+        <img class="img img-thumbnail" src="{{ url_for("static", filename="tutt-art-reading-room-outsider-art.png") }}">
+      </section> 
+    </div>
+    <br>
+    <section class="jumbotron">
+      <h1>Do you see challenges for these books in the new space?
+      <i class="glyphicon glyphicon-hand-right"></i>
+       <img src="{{ url_for('static', filename='down-elevator.svg') }}"
+            style="width: 80px"></h1>
+
+     </section>
+    <hr>
+    <div class="row">
+      <section class="jumbotron">
+       <h1>Could IOT be a solution?</h1>
+       <p class="lead">A Great Idea  would be to development a cheap and affordable 
+        IOT (internet-of-things) solution on rapidly improving open-hardward platforms like 
+        <a href="https://www.raspberrypi.org/">Raspberry Pi</a> and 
+        <a href="https://www.arduino.cc/">Arduino</a>.</p>
+        <h2 class="text-right">&hellip;don't worry I'll provide the library software</h2>
+        <h1><i class="glyphicon glyphicon-hand-down"></i></h1>
+         <img src="{{ url_for('static', filename='down-elevator.svg') }}"
+            style="width: 80px"></h1>
+      </section>
+    </div>
+    <hr>
+    <div class="jumbotron text-center">
+     <h1>
+     <i class="glyphicon glyphicon-bell"></i> 
+     Thank-you!</h1>
+     <img src="{{ url_for('static', filename="up-elevator.svg") }}" style="width: 80px">
+     <h2>Questions? <i class="glyphicon glyphicon-question-sign"></i></h2>
+      <p class="lead">
+        Jeremy Nelson<br>
+        Metatdata and Systems Cataloger<br>
+       <a href="mailto:jeremy.nelson@coloradocollege.edu">jeremy.nelson@coloradocollege.edu</a><br>
+       (719) 389-6895
+      </p>
+    </div>
+    <a href="">source code repository for this presentation</a> 
+    <!-- jQuery (necessary for 
+        Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
